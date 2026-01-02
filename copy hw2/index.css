@@ -1,0 +1,169 @@
+.page1{
+width:100vw ;
+height:100vh ;
+background-color: rgb(39, 34, 34);
+position: relative;
+overflow: hidden;
+}
+.page1img{
+display: flex;
+justify-content: center;
+object-fit: cover;
+
+}
+.page1img img{display: flex;
+position: absolute;
+width: 235px;
+bottom: 0;
+display: block;
+}
+
+.content{
+min-height: 100vh;  /*כדי justify-contentיעבוד צריך לתת אורך לעמודה */
+display: flex;
+justify-content: center;   /*אמצע עמודה*/
+align-items: center;   /* אמצע שורה*/
+flex-direction: column; /* הנתונים יופיעו באופן אנכי*/
+font-size: larger;
+font-style: italic;
+color: rgb(165, 160, 160);
+position: relative;/*המלים יופיעו מעל התמונות*/
+animation: move 5s;}
+.con{ margin: 0%;}
+/* התמונה האמצעית */
+.page1img2{ 
+display: flex;
+position: absolute;
+right: 0%;/* תיפיע מצד שמאל*/
+top: 12%;/* קצת למטה*/
+
+}
+.page1img2 img{
+     width: 200px;
+     height: auto;
+     transform: scaleX(-1);/* הפיכת הכיוון*/
+
+}
+
+.page1img3{ 
+display: flex;
+position: absolute;
+bottom: 0%;
+}
+.page1img3 img{
+
+ width: 200px;
+ height: auto;
+
+}
+
+.img4{
+display: block;
+width: 200px;
+margin: auto;
+height: 25%;
+
+}
+.center {
+display: block;
+text-align: center;
+text-align: 50px 50% ;
+}
+.page2h1,h1{
+
+ font-style: italic;
+ font-size:60px;
+}
+.contact-message{display: block;
+text-align: center;
+line-height: 2;
+margin: 0 35%;
+}
+
+.dot{
+    border: dotted #829191 6px;
+    border-bottom: none;
+    width: 6%;
+    margin: 100px auto;
+  }
+
+  /* 3 */
+
+
+.Skills img{
+ height: 100px;
+border-radius: 50%;
+ padding-right: 30px;
+display: block;}
+.Skills{
+display: flex;  
+flex-direction:row;
+justify-content: center;
+margin: 7%;
+}
+dt,dd{
+font-size: 20px;
+text-align: start;
+margin-left: 0;
+}
+
+dt{color: #829191;}
+button{
+
+background-color: black;
+color:rgb(165, 160, 160); 
+border-radius: 8px;
+font-family: "Montserrat", sans-serif;
+font-size: 20px;
+padding: 10px 20px 10px 20px;
+
+}
+
+
+button:hover{ 
+background-color: #829191;
+}
+.end{width: 100%;
+background-color: black;
+bottom: 0;
+position: absolute;
+}
+ul{
+     display: flex;
+     justify-content: space-between ;
+     margin-top: 70px;
+
+}
+
+a{   
+text-decoration: none;
+color: thistle;
+font-size: 20px;
+margin: 5%;
+
+
+}
+.row{
+
+     display: flex;
+     justify-content: center;
+    
+
+}
+footer{
+     font-size: 20px;
+     color: thistle;
+}
+body{max-width: 250px;
+
+
+}
+@keyframes move{
+25% {transform: scale(1);}
+50%{transform: scale(-1);}
+25% {transform: scale(1);}
+50%{transform: scale(-1);}
+
+
+}
+
